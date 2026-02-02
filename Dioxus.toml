@@ -1,10 +1,9 @@
 [application]
 
 [web.app]
-
+base_path = "be-my-valentines"
 # HTML title tag content
 title = "hot_dog"
-
 # include `assets` in web platform
 [web.resource]
 
