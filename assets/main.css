@@ -1,0 +1,424 @@
+/*/* App-wide styling */
+html,
+body {
+    background-color: #0e0e0e;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#dogview {
+    max-height: 80vh;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#dogview img {
+    display: block;
+    max-width: 50%;
+    max-height: 50%;
+    transform: scale(1.8);
+    border-radius: 5px;
+    border: 1px solid rgb(233, 233, 233);
+    box-shadow: 0px 0px 5px 1px rgb(216, 216, 216, 0.5);
+}
+
+#title {
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #a8a8a8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#title a {
+    text-decoration: none;
+    color: white;
+}
+
+a#heart {
+    background-color: white;
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#title span {
+    width: 20px;
+}
+
+#title h1 {
+    margin: 0.25em;
+    font-style: italic;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+}
+
+#skip {
+    background-color: gray;
+}
+#save {
+    background-color: green;
+}
+
+#skip,
+#save {
+    padding: 5px 30px 5px 30px;
+    border-radius: 3px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+}
+
+#navbar {
+    border: 1px solid rgb(233, 233, 233);
+    border-width: 1px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+}
+
+#navbar a {
+    background-color: #a8a8a8;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px 10px 30px;
+}
+
+#favorites {
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#favorites-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.favorite-dog {
+    max-height: 180px;
+    max-width: 60%;
+    position: relative;
+}
+
+.favorite-dog img {
+    max-height: 150px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.favorite-dog:hover button {
+    display: block;
+}
+
+.favorite-dog button {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10;
+}
+*/
+
+/* =========================
+   App-wide styling 💕
+   ========================= */
+html, body {
+    background: radial-gradient(circle at top, #3a0f1c, #16080d);
+    color: #fff0f4;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+/* =========================
+   Dog view 🐶💘
+   ========================= */
+#dogview {
+    max-height: 80vh;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#dogview img {
+    display: block;
+    max-width: 50%;
+    max-height: 50%;
+    transform: scale(1.8);
+    border-radius: 12px;
+    border: 2px solid #fb7185;
+    box-shadow:
+        0 0 20px rgba(251, 113, 133, 0.6),
+        0 0 40px rgba(225, 29, 72, 0.4);
+}
+
+/* =========================
+   Title bar 💌
+   ========================= */
+#title {
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #fb7185;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right, #3a0f1c, #5b1327, #3a0f1c);
+}
+
+#title a {
+    text-decoration: none;
+    color: #ffe4ec;
+}
+
+a#heart {
+    background: linear-gradient(135deg, #fb7185, #e11d48);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(225, 29, 72, 0.7);
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+a#heart:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 18px rgba(225, 29, 72, 1);
+}
+
+#title span {
+    width: 20px;
+}
+
+#title h1 {
+    margin: 0.25em;
+    font-style: italic;
+    color: #fff0f4;
+}
+
+/* =========================
+   Buttons 💞
+   ========================= */
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 20px;
+}
+
+#skip {
+    background: linear-gradient(135deg, #6b0f1a, #9f1239);
+}
+
+#save {
+    background: linear-gradient(135deg, #fb7185, #e11d48);
+}
+
+#skip,
+#save {
+    padding: 10px 40px;
+    border-radius: 12px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff0f4;
+    border: none;
+    box-shadow: 0 6px 20px rgba(225, 29, 72, 0.5);
+    cursor: pointer;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+#skip:hover,
+#save:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(225, 29, 72, 0.8);
+}
+
+/* =========================
+   Navbar 💗
+   ========================= */
+#navbar {
+    border-top: 1px solid #fb7185;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+    background-color: #2a0a14;
+}
+
+#navbar a {
+    background: linear-gradient(135deg, #ffe4ec, #fecdd3);
+    border-radius: 10px;
+    border: 1px solid #fb7185;
+    text-decoration: none;
+    color: #4a0f23;
+    padding: 10px 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.4);
+    transition: transform 0.15s ease;
+}
+
+#navbar a:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   Favorites 💘
+   ========================= */
+#favorites {
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#favorites-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+}
+
+.favorite-dog {
+    max-height: 180px;
+    max-width: 60%;
+    position: relative;
+    border-radius: 12px;
+}
+
+.favorite-dog img {
+    max-height: 150px;
+    border-radius: 12px;
+    margin: 5px;
+    border: 2px solid #fb7185;
+    box-shadow: 0 0 12px rgba(225, 29, 72, 0.6);
+}
+
+.favorite-dog:hover button {
+    display: block;
+}
+
+.favorite-dog button {
+    display: none;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    z-index: 10;
+    background: #e11d48;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(225, 29, 72, 0.8);
+    cursor: pointer;
+}
+
+.choice-button {
+    padding: 24px 80px; /* BIG hit area */
+    font-size: 3rem; /* Loud and clear */
+    font-weight: 800;
+    border-radius: 20px;
+
+    background: linear-gradient(135deg, #fb7185, #e11d48);
+    color: #fff0f4;
+
+    box-shadow:
+        0 8px 25px rgba(225, 29, 72, 0.6),
+        0 0 30px rgba(251, 113, 133, 0.5);
+
+    cursor: pointer;
+    transition:
+        transform 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.choice-button:hover {
+    transform: scale(1.08);
+    box-shadow:
+        0 12px 35px rgba(225, 29, 72, 0.8),
+        0 0 45px rgba(251, 113, 133, 0.7);
+}
+
+/* Optional: make Yes and No visually distinct */
+.choice-button.yes {
+    background: linear-gradient(135deg, #fda4af, #fb7185);
+}
+
+.choice-button.no {
+    background: linear-gradient(135deg, #6b0f1a, #9f1239);
+}
+
+#celebration-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    background: rgba(20, 5, 10, 0.85); /* dim backdrop */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#celebration-overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
