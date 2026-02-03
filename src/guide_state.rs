@@ -74,6 +74,13 @@ fn ButtonElement(timer: Signal<DioxusTimer>) -> Element {
     let element = match timer.read().state() {
         TimerState::Inactive => {
             rsx! {
+if *show_gif.read() {
+
+                    div { id: "celebration-overlay",
+                        h1 { "You and me buns for 2026 ♥️"}
+                        img { src: CELEBRATION }
+                    }
+                }
 
                     div { id: "buttons",
                     button {
