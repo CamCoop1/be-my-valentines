@@ -1,4 +1,4 @@
-[![pages-build-deployment](https://github.com/CamCoop1/be-my-valentines/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/CamCoop1/be-my-valentines/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/CamCoop1/be-my-valentines/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/CamCoop1/be-my-valentines/actions/workflows/pages/pages-build-deployment) [![Website](https://camcoop1.github.io/be-my-valentines/)]
 
 # For my 2026 Valentines
 
