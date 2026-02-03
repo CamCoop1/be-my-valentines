@@ -181,7 +181,7 @@ html, body {
    Dog view 🐶💘
    ========================= */
 #dogview {
-    max-height: 80vh;
+    max-height: 70vh;
     flex-grow: 1;
     width: 100%;
     display: flex;
@@ -194,7 +194,7 @@ html, body {
     display: block;
     max-width: 50%;
     max-height: 50%;
-    transform: scale(1.8);
+    /*transform: scale(1.8);*/
     border-radius: 12px;
     border: 2px solid #fb7185;
     box-shadow:
@@ -424,14 +424,28 @@ a#heart:hover {
     object-fit: contain;
 }
 
+#celebration-overlay h1 {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+    color: white;
+    text-align: center;
+
+    /* optional glow for readability */
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
 @keyframes pulse {
     0% {
-        transform: scale(1.5);
+        transform: scale(1);
     }
     50% {
-        transform: scale(2);
+        transform: scale(1.5);
     }
     100% {
-        transform: scale(1.5);
+        transform: scale(1);
     }
 }
