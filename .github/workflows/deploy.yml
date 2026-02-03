@@ -25,10 +25,9 @@ jobs:
       - name: Prepare docs folder
         run: |
           rm -rf docs
-          mkdir docs
 
       - name: Build website
-        run: dx bundle --out-dir
+        run: dx bundle --out-dir docs
 
       - name: Finalize docs
         run: |
