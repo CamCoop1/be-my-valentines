@@ -69,7 +69,6 @@ fn DogView() -> Element {
         div { id: "dogview",
             img { src: WILLOW }
         }
-
         div { id: "buttons",
             button {
                 class: "choice-button yes",
