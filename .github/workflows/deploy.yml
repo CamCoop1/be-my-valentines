@@ -28,7 +28,7 @@ jobs:
           mkdir docs
 
       - name: Build website
-        run: dx bundle --out-diur
+        run: dx bundle --out-dir
 
       - name: Finalize docs
         run: |
